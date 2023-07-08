@@ -14,10 +14,15 @@ body{
   min-height:100vh;
  
 }
-img{
- 
+
+
+
+.slider .slider-image>img{
+ opacity: 0;
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  object-fit: fill;
+  position: absolute;
 }
 .slider{
   display: flex;
@@ -30,7 +35,9 @@ img{
   border: 3px solid #cf1919;
   cursor: pointer;
 }
-
+.slider .slider-image .active{
+  opacity: 1;
+}
 .slider .slider-image{
   width: 100%;
   height: calc(100% - 20%);
